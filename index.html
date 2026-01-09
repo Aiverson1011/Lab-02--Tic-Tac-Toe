@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="status" id="status" aria-live="polite">X’s turn</p>
+      </header>
+
+      <section class="controls">
+        <label class="toggle">
+          <input type="checkbox" id="cpuToggle" />
+          <span>Play vs CPU (O)</span>
+        </label>
+        <button id="resetBtn" class="btn">Reset</button>
+      </section>
+
+      <section class="players">
+  <div class="player">
+    <label for="playerX">Player X</label>
+    <input id="playerX" type="text" placeholder="Enter name" />
+  </div>
+
+  <div class="player">
+    <label for="playerO">Player O</label>
+    <input id="playerO" type="text" placeholder="Enter name" />
+  </div>
+</section>
+
+
+      <section
+        id="board"
+        class="board"
+        role="grid"
+        aria-label="Tic-tac-toe board"
+      >
+        <!-- cells injected by JS -->
+      </section>
+
+      <footer class="footer">
+        <small>Tip: Click a square to place your mark.</small>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
